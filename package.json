@@ -1,0 +1,34 @@
+{
+  "name": "weightlog-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "watchify -v  -d -t babelify src/main.js -o build/bundle.js",
+    "build": "browserify -t babelify -d src/main.js -o build/bundle.js && cp src/index.html build/index.html",
+    "test": "standard src/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxpolun/weightlog-ui.git"
+  },
+  "author": "Max Polun <maxpolun@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxpolun/weightlog-ui/issues"
+  },
+  "homepage": "https://github.com/maxpolun/weightlog-ui#readme",
+  "dependencies": {
+    "babelify": "^6.1.3",
+    "browserify": "^11.0.0",
+    "immutable": "^3.7.4",
+    "node-uuid": "^1.4.3",
+    "react": "^0.13.3",
+    "react-day-picker": "^1.0.3",
+    "react-redux": "^0.8.2",
+    "react-router": "^0.13.3",
+    "redux": "^1.0.0-rc",
+    "standard": "^4.5.4",
+    "watchify": "^3.3.0"
+  }
+}

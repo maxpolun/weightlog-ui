@@ -1,0 +1,1 @@
+export const EXERSIZE_ADDED = 'EXERSIZE_ADDED'
