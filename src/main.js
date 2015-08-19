@@ -1,4 +1,4 @@
-import "babelify/polyfill"
+import "babel-core/polyfill"
 import React from 'react'
 import SetList from './components/SetList'
 import Root from './components/Root'
