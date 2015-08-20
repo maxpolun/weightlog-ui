@@ -11,7 +11,7 @@ class AddSetArea  extends React.Component {
   }
 
   renderButton() {
-    return <button type="button" onClick={() => this.props.dispatch(show())}>+</button>
+    return <button type="button" className="btn" onClick={() => this.props.dispatch(show())}>ADD SET</button>
   }
 
   renderForm() {

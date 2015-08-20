@@ -7,7 +7,7 @@ import AddSetArea from './AddSetArea'
 
 class SetList extends React.Component {
   render() {
-    return (<div><ul>
+    return (<div className="set-area"><ul className="set-list">
         {this.props.sets.map(s => <SetItem key={s.uuid} {...s} />)}
       </ul>
       <AddSetArea/>

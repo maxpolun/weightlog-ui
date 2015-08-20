@@ -8,6 +8,9 @@ import {Provider} from 'react-redux'
 import {createStore, combineReducers, applyMiddleware} from 'redux'
 import * as reducers from './reducers/reducers'
 
+import 'normalize.css'
+import './main.scss'
+
 function logger({ getState }) {
   return (next) => (action) => {
     console.log('will dispatch', action);
